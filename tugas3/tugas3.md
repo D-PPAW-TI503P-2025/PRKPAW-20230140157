@@ -12,12 +12,12 @@ Semua pengujian dilakukan melalui **Thunder Client** dengan asumsi *middleware* 
 
 | Endpoint | Method | Keterangan | Hasil Uji (Screenshot) |
 | :--- | :--- | :--- | :--- |
-| `/api/presensi/check-in` | **POST** | Mencatat *check-in* baru. | **[check-in.png](ss/check-in.png)** |
+| `/api/presensi/check-in` | **POST** | Mencatat *check-in* baru. | **[check-in.png](ss3/check-in.png)** |
 
 **Tampilan Hasil Uji POST (Check-in Berhasil):**
 *Status HTTP: 201 Created*
 
-![Screenshot Pengujian POST Check-in Berhasil](image_9d1828.png)
+![Screenshot Pengujian POST Check-in Berhasil](ss3/check-in.png)
 
 ---
 
@@ -27,12 +27,12 @@ Semua pengujian dilakukan melalui **Thunder Client** dengan asumsi *middleware* 
 
 | Endpoint | Method | Keterangan | Hasil Uji (Screenshot) |
 | :--- | :--- | :--- | :--- |
-| `/api/presensi/check-in` | **POST** | Mencoba *check-in* lagi. | **[check-in2.png](ss/check-in2.png)** |
+| `/api/presensi/check-in` | **POST** | Mencoba *check-in* lagi. | **[check-in2.png](ss3/check-in2.png)** |
 
 **Tampilan Hasil Uji POST (Check-in Gagal):**
 *Status HTTP: 400 Bad Request*
 
-![Screenshot Pengujian POST Check-in Gagal (Sudah Check-in)](image_9d1580.png)
+![Screenshot Pengujian POST Check-in Gagal (Sudah Check-in)](ss3/check-in2.png)
 
 ---
 
@@ -42,12 +42,12 @@ Semua pengujian dilakukan melalui **Thunder Client** dengan asumsi *middleware* 
 
 | Endpoint | Method | Keterangan | Hasil Uji (Screenshot) |
 | :--- | :--- | :--- | :--- |
-| `/api/presensi/check-out` | **POST** | Mencatat *check-out* untuk sesi *check-in* yang sudah ada. | **[check-out.png](ss/check-out.png)** |
+| `/api/presensi/check-out` | **POST** | Mencatat *check-out* untuk sesi *check-in* yang sudah ada. | **[check-out.png](ss3/check-out.png)** |
 
 **Tampilan Hasil Uji POST (Check-out Berhasil):**
 *Status HTTP: 200 OK*
 
-![Screenshot Pengujian POST Check-out Berhasil](image_9d1578.png)
+![Screenshot Pengujian POST Check-out Berhasil](ss3/check-out.png)
 
 ---
 
@@ -57,12 +57,12 @@ Semua pengujian dilakukan melalui **Thunder Client** dengan asumsi *middleware* 
 
 | Endpoint | Method | Keterangan | Hasil Uji (Screenshot) |
 | :--- | :--- | :--- | :--- |
-| `/api/presensi/check-out` | **POST** | Mencoba *check-out* kedua kali/tanpa *check-in* aktif. | **[check-out2.png](ss/check-out2.png)** |
+| `/api/presensi/check-out` | **POST** | Mencoba *check-out* kedua kali/tanpa *check-in* aktif. | **[check-out2.png](ss3/check-out2.png)** |
 
 **Tampilan Hasil Uji POST (Check-out Gagal):**
 *Status HTTP: 404 Not Found*
 
-![Screenshot Pengujian POST Check-out Gagal (Tidak Ditemukan Catatan)](image_9d155c.png)
+![Screenshot Pengujian POST Check-out Gagal (Tidak Ditemukan Catatan)](ss3/check-out2.png)
 
 ---
 
@@ -72,12 +72,12 @@ Semua pengujian dilakukan melalui **Thunder Client** dengan asumsi *middleware* 
 
 | Endpoint | Method | Keterangan | Hasil Uji (Screenshot) |
 | :--- | :--- | :--- | :--- |
-| `/api/reports/daily` | **GET** | Akses laporan harian oleh user non-admin. | **[karyawan.png](ss/karyawan.png)** |
+| `/api/reports/daily` | **GET** | Akses laporan harian oleh user non-admin. | **[karyawan.png](ss3/karyawan.png)** |
 
 **Tampilan Hasil Uji GET (Laporan Gagal Otorisasi):**
 *Status HTTP: 403 Forbidden*
 
-![Screenshot Pengujian GET Laporan Gagal (Akses Ditolak)](image_9d1540.png)
+![Screenshot Pengujian GET Laporan Gagal (Akses Ditolak)](ss3/karyawan.png)
 
 ---
 
@@ -87,9 +87,9 @@ Semua pengujian dilakukan melalui **Thunder Client** dengan asumsi *middleware* 
 
 | Endpoint | Method | Keterangan | Hasil Uji (Screenshot) |
 | :--- | :--- | :--- | :--- |
-| `/api/reports/daily` | **GET** | Akses laporan harian oleh user admin. | **[admin.png](ss/admin.png)** |
+| `/api/reports/daily` | **GET** | Akses laporan harian oleh user admin. | **[admin.png](ss3/admin.png)** |
 
 **Tampilan Hasil Uji GET (Laporan Berhasil):**
 *Status HTTP: 200 OK*
 
-![Screenshot Pengujian GET Laporan Harian Berhasil](image_9d1521.png)
+![Screenshot Pengujian GET Laporan Harian Berhasil](ss3/admin.png)
